@@ -1,0 +1,71 @@
+body{
+	font-family: sans-serif;
+}
+#menu{
+	position: absolute;
+	top: 0;
+	right: 50%;
+	left: 0;
+	bottom: 0;
+	text-align:center;
+}
+
+#plot{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 50%;
+	bottom: 0;
+	text-align:center;
+	background-color: #e5e5e5BF;
+}
+#airselect{
+	position: relative;
+	top: 25%;
+	width:300px;
+	height: 30px;
+}
+#go{
+	position: relative;
+	top: 25%;
+	height: 35px;
+	width: 60px;
+	background-color: #fc805a;
+	border:none;
+	cursor: pointer;
+}
+#go:active{
+	background-color: white;
+	color: #fc805a;
+}
+#explanation{
+	position: relative;
+	display: block;
+	top: 30%;
+	width: 80%;
+	left: 10%;
+}
+
+@media only screen and (max-width: 800px) {
+	#menu{
+		right:0;
+		width:100%;
+	}
+	#airselect{
+		top:15%;
+	}
+	#go{
+		top:15%;
+	}
+	#explanation{
+		top:25%;
+	}
+	#plot{
+		left: 5%;
+		top:45%;
+		background-color: transparent;
+	}
+	body{
+		background-color: #e5e5e5BF;
+	}
+}
